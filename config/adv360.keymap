@@ -42,11 +42,11 @@
     };
     fn {
       bindings = <
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                                          &mo 3                &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &trans &trans &trans &trans &kp LG(F1)                                                      &kp LG(LS(LC(UP)))   &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans &kp LG(F2)                   &trans &trans &trans &trans        &kp LG(LS(LC(DOWN))) &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans                                     &trans &trans                                    &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans                   &kp LG(LS(RIGHT)) &trans &trans &trans &trans &trans                             &trans &trans &trans  &trans  &trans
+        &kp F1             &kp F2        &kp F3        &kp F4        &kp F5         &kp F6        &tog 1                                                                                    &mo 3                &kp F7     &kp F8        &kp F9            &kp F10          &kp F11       &kp F12
+        &trans             &kp LG(LS(Q)) &kp LC(F2)    &trans        &kp LC(R)      &kp LC(LS(T)) &kp LG(F1)                                                                                &kp LG(LS(LC(UP)))   &kp LA(F7) &kp LA(F8)    &kp LG(LS(I))     &trans           &kp LC(LA(P)) &trans
+        &kp LG(LS(DELETE)) &kp LC(F2)    &trans        &trans        &kp LC(LA(F))  &trans        &kp LG(F2)                                   &trans &trans &trans &trans                  &kp LG(LS(LC(DOWN))) &trans     &kp LC(F8)    &kp LC(LS(COMMA)) &kp LC(LS(F10))  &trans        &trans
+        &trans             &kp LG(LS(Z)) &kp LG(LS(X)) &kp LC(LA(C)) &kp LC(LA(V))  &kp LG(LS(B))                                                     &trans &trans                                              &trans     &kp LC(LA(M)) &trans            &trans           &trans        &trans
+        &trans             &kp LA(GRAVE) &trans        &kp LC(LEFT)  &kp LC(RIGHT)                           &kp LG(LS(RIGHT)) &kp LA(DELETE)) &trans &trans &kp LG(INSERT) &kp LA(INSERT)                                  &kp LC(DOWN)  &kp LC(UP)        &trans           &trans        &trans
       >;
     };
     mod {
