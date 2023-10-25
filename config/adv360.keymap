@@ -42,11 +42,11 @@
     };
     fn {
       bindings = <
-        &kp F1          &kp F2        &kp F3        &kp F4           &kp F5            &kp F6        &tog 1                                                                                         &mo 3                &kp F7         &kp F8        &kp F9            &kp F10          &kp F11       &kp F12
-        &kp LA(TAB)     &kp LG(LS(Q)) &kp LC(F2)    &kp LC(F4)       &kp LC(F5)        &kp LC(LS(T)) &kp LG(F1)                                                                                     &kp LG(LS(LC(UP)))   &kp LA(F7)     &kp LA(F8)    &kp LG(LS(I))     &kp LC(LS(F9))   &kp LC(LA(P)) &kp LA(F12)
-        &kp LG(LS(DEL)) &kp LC(F2)    &kp LC(F5)    &kp LC(F6)       &kp LC(LA(F))     &kp LA(T)     &kp LG(F2)                              &trans &trans            &trans &trans                 &kp LG(LS(LC(DOWN))) &kp LA(F8)     &kp LC(F8)    &kp LC(LS(COMMA)) &kp LC(LS(F10))  &trans        &trans
-        &trans          &kp LG(LS(Z)) &kp LG(LS(X)) &kp LC(LA(C))    &kp LC(LA(V))     &kp LG(LS(B))                                                &kp LG(LS(LEFT))  &trans                                             &kp LC(LS(N))  &kp LC(LA(M)) &kp LA(F9)        &trans           &trans        &trans
-        &trans          &kp LA(GRAVE) &trans        &kp LC(LA(LEFT)) &kp LC(LA(RIGHT))                              &kp LC(LS(DEL)) &kp LG(LS(DEL)) &kp LG(LS(RIGHT)) &trans &kp LG(INS) &kp LA(INS)                                    &kp LC(DOWN)  &kp LC(UP)        &trans           &trans        &trans
+        &kp F1          &kp F2        &kp F3        &kp F4           &kp F5            &kp F6        &tog 1                                                                                          &mo 3                &kp F7         &kp F8        &kp F9            &kp F10          &kp F11       &kp F12
+        &kp LA(TAB)     &kp LG(LS(Q)) &kp LC(F2)    &kp LC(F4)       &kp LC(F5)        &kp LC(LS(T)) &kp LG(F1)                                                                                      &kp LG(LS(LC(UP)))   &kp LA(F7)     &kp LA(F8)    &kp LG(LS(I))     &kp LC(LS(F9))   &kp LC(LA(P)) &kp LA(F12)
+        &kp LG(LS(DEL)) &kp LC(F2)    &kp LC(F5)    &kp LC(F6)       &kp LC(LA(F))     &kp LA(T)     &kp LG(F2)                               &trans &trans            &trans &trans                 &kp LG(LS(LC(DOWN))) &kp LA(F8)     &kp LC(F8)    &kp LC(LS(COMMA)) &kp LC(LS(F10))  &trans        &trans
+        &trans          &kp LG(LS(Z)) &kp LG(LS(X)) &kp LC(LA(C))    &kp LC(LA(V))     &kp LG(LS(B))                                                 &kp LC(LA(LEFT))  &kp LG(LS(LEFT))                                   &kp LC(LS(N))  &kp LC(LA(M)) &kp LA(F9)        &trans           &trans        &trans
+        &trans          &kp LA(GRAVE) &trans        &kp LC(LA(LEFT)) &kp LC(LA(RIGHT))                              &kp LC(LS(BSPC)) &kp LG(LS(DEL)) &kp LC(LA(RIGHT)) &kp LG(LS(RIGHT)) &kp LG(INS) &kp LA(INS)                         &kp LC(DOWN)  &kp LC(UP)        &trans           &trans        &trans
       >;
     };
     mod {
@@ -59,4 +59,4 @@
       >;
     };
   };
-};
+}
