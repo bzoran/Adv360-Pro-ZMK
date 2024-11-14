@@ -24,8 +24,8 @@
 
     default_layer {
       bindings = <
-        &mt LG(EQUAL) EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                  &mo 3             &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &mt LG(MINUS) MINUS
-        &kp TAB             &kp Q     &kp W    &kp E    &kp R      &kp T  &tog 4                                                                  &kp LG(LS(ENTER)) &kp Y  &kp U    &kp I     &kp O    &kp P    &kp BSLH
+        &mt LG(EQUAL) EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                  &mo 5             &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &mt LG(MINUS) MINUS
+        &kp TAB             &kp Q     &kp W    &kp E    &kp R      &kp T  &tog 3                                                                  &kp LG(LS(ENTER)) &kp Y  &kp U    &kp I     &kp O    &kp P    &kp BSLH
         &kp ESC             &kp A     &kp S    &kp D    &kp F      &kp G  &kp LALT(LS)           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &kp LG(ENTER)     &kp H  &kp J    &kp K     &kp L    &kp SEMI &kp SQT
         &kp LSHFT           &kp Z     &kp X    &kp C    &kp V      &kp B                                   &kp HOME &kp PG_UP                                       &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
         &mo 2               &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                       &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE                          &kp DOWN &kp UP    &kp LBKT &kp RBKT &mo 2
@@ -33,7 +33,7 @@
     };
     keypad {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
+        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo 5 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
         &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
@@ -42,11 +42,29 @@
     };
     fn {
       bindings = <
-        &kp F1          &kp F2        &kp F3        &kp F4           &kp F5            &kp F6        &tog 1                                                                                          &mo 3                &kp F7         &kp F8        &kp F9            &kp F10          &kp F11       &kp F12
+        &kp F1          &kp F2        &kp F3        &kp F4           &kp F5            &kp F6        &tog 1                                                                                          &mo 5                &kp F7         &kp F8        &kp F9            &kp F10          &kp F11       &kp F12
         &kp LA(TAB)     &kp LG(LS(Q)) &kp LC(F2)    &kp LC(F4)       &kp LC(F5)        &kp LC(LS(T)) &kp LG(F1)                                                                                      &kp LG(LS(LC(UP)))   &kp LA(F7)     &kp LA(F8)    &kp LG(LS(I))     &kp LC(LS(F9))   &kp LC(LA(P)) &kp LA(F12)
         &kp LG(LS(DEL)) &kp LC(F2)    &kp LC(F5)    &kp LC(F6)       &kp LC(LA(F))     &kp LA(T)     &kp LG(F2)                               &trans &trans            &trans            &trans      &kp LG(LS(LC(DOWN))) &kp LA(F8)     &kp LC(F8)    &kp LC(LS(COMMA)) &kp LC(LS(F10))  &kp C_MUTE    &trans
         &trans          &kp LG(LS(Z)) &kp LG(LS(X)) &kp LC(LA(C))    &kp LC(LA(V))     &kp LG(LS(B))                                                 &kp LC(LA(LEFT))  &kp LG(LS(LEFT))                                   &kp LC(LS(N))  &kp LC(LA(M)) &kp LA(F9)        &trans           &trans        &trans
         &trans          &kp LA(GRAVE) &trans        &kp LC(LA(LEFT)) &kp LC(LA(RIGHT))                              &kp LC(LS(BSPC)) &kp LG(LS(DEL)) &kp LC(LA(RIGHT)) &kp LG(LS(RIGHT)) &kp LG(INS) &kp LA(INS)                         &kp LC(DOWN)  &kp LC(UP)        &kp C_VOL_DN     &kp C_VOL_UP  &trans
+      >;
+    };
+    android_layer {
+      bindings = <
+        &kp EQUAL      &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                  &mo 5             &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp MINUS
+        &kp TAB        &kp Q     &kp W    &kp E    &kp R      &kp T  &kp LGUI                                                                &kp RC(LS(ENTER)) &kp Y  &kp U    &kp I     &kp O    &kp P    &kp BSLH
+        &kp ESC        &kp A     &kp S    &kp D    &kp F      &kp G  &kp LALT(LS)           &kp LCTRL &kp LALT &kp RCTRL &kp LCTRL           &kp RC(ENTER)     &kp H  &kp J    &kp K     &kp L    &kp SEMI &kp SQT
+        &kp LSHFT      &kp Z     &kp X    &kp C    &kp V      &kp B                                   &kp HOME &kp PG_UP                                       &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+        &mo 4          &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                       &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE                          &kp DOWN &kp UP    &kp LBKT &kp RBKT &mo 4
+      >;
+    };
+    android_fn {
+      bindings = <
+        &kp F1              &kp F2            &kp F3            &kp F4           &kp F5            &kp F6            &tog 1                                                                                                  &mo 5                    &kp F7             &kp F8        &kp F9                &kp F10              &kp F11       &kp F12
+        &kp LA(TAB)         &kp RC(LS(RS(Q))) &kp LC(F2)        &kp LC(F4)       &kp LC(F5)        &kp LC(LS(RS(T))) &tog 3                                                                                                  &kp RC(LS(RS(LC(UP))))   &kp LA(F7)         &kp LA(F8)    &kp RC(LS(RS(I)))     &kp LC(LS(RS(F9)))   &kp LC(LA(P)) &kp LA(F12)
+        &kp RC(LS(RS(DEL))) &kp LC(F2)        &kp LC(F5)        &kp LC(F6)       &kp LC(LA(F))     &kp LA(T)         &kp RC(F2)                                   &trans &trans            &trans                &trans      &kp RC(LS(RS(LC(DOWN)))) &kp LA(F8)         &kp LC(F8)    &kp LC(LS(RS(COMMA))) &kp LC(LS(RS(F10)))  &kp C_MUTE    &trans
+        &trans              &kp RC(LS(RS(Z))) &kp RC(LS(RS(X))) &kp LC(LA(C))    &kp LC(LA(V))     &kp RC(LS(RS(B)))                                                     &kp LC(LA(LEFT))  &kp RC(LS(RS(LEFT)))                                       &kp LC(LS(RS(N)))  &kp LC(LA(M)) &kp LA(F9)            &trans               &trans        &trans
+        &trans              &kp LA(GRAVE)     &trans            &kp LC(LA(LEFT)) &kp LC(LA(RIGHT))                              &kp LC(LS(RS(BSPC))) &kp RC(LS(RS(DEL))) &kp LC(LA(RIGHT)) &kp RC(LS(RS(RIGHT))) &kp RC(INS) &kp LA(INS)                                 &kp LC(DOWN)  &kp LC(UP)            &kp C_VOL_DN         &kp C_VOL_UP  &trans
       >;
     };
     mod {
@@ -54,26 +72,8 @@
         &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                     &trans                 &none        &none        &none        &none &none &none
         &none &none        &none        &none        &none        &none        &bootloader                                                               &bootloader            &none        &none        &none        &none &none &none
         &none &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                      &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none        &none                                      &none &none                                                        &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
-      >;
-    };
-    android_layer {
-      bindings = <
-        &kp EQUAL      &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 4                                                                  &trans            &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB        &kp Q     &kp W    &kp E    &kp R      &kp T  &kp LGUI                                                                &kp RC(LS(ENTER)) &kp Y  &kp U    &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC        &kp A     &kp S    &kp D    &kp F      &kp G  &kp LALT(LS)           &kp LCTRL &kp LALT &kp RCTRL &kp LCTRL           &kp RC(ENTER)     &kp H  &kp J    &kp K     &kp L    &kp SEMI &kp SQT
-        &kp LSHFT      &kp Z     &kp X    &kp C    &kp V      &kp B                                   &kp HOME &kp PG_UP                                       &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 5          &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                       &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE                          &kp DOWN &kp UP    &kp LBKT &kp RBKT &mo 5
-      >;
-    };
-    android_fn {
-      bindings = <
-        &kp F1              &kp F2            &kp F3            &kp F4           &kp F5            &kp F6            &tog 1                                                                                                  &mo 3                    &kp F7             &kp F8        &kp F9                &kp F10              &kp F11       &kp F12
-        &kp LA(TAB)         &kp RC(LS(RS(Q))) &kp LC(F2)        &kp LC(F4)       &kp LC(F5)        &kp LC(LS(RS(T))) &kp RC(F1)                                                                                              &kp RC(LS(RS(LC(UP))))   &kp LA(F7)         &kp LA(F8)    &kp RC(LS(RS(I)))     &kp LC(LS(RS(F9)))   &kp LC(LA(P)) &kp LA(F12)
-        &kp RC(LS(RS(DEL))) &kp LC(F2)        &kp LC(F5)        &kp LC(F6)       &kp LC(LA(F))     &kp LA(T)         &kp RC(F2)                                   &trans &trans            &trans                &trans      &kp RC(LS(RS(LC(DOWN)))) &kp LA(F8)         &kp LC(F8)    &kp LC(LS(RS(COMMA))) &kp LC(LS(RS(F10)))  &kp C_MUTE    &trans
-        &trans              &kp RC(LS(RS(Z))) &kp RC(LS(RS(X))) &kp LC(LA(C))    &kp LC(LA(V))     &kp RC(LS(RS(B)))                                                     &kp LC(LA(LEFT))  &kp RC(LS(RS(LEFT)))                                       &kp LC(LS(RS(N)))  &kp LC(LA(M)) &kp LA(F9)            &trans               &trans        &trans
-        &trans              &kp LA(GRAVE)     &trans            &kp LC(LA(LEFT)) &kp LC(LA(RIGHT))                              &kp LC(LS(RS(BSPC))) &kp RC(LS(RS(DEL))) &kp LC(LA(RIGHT)) &kp RC(LS(RS(RIGHT))) &kp RC(INS) &kp LA(INS)                                 &kp LC(DOWN)  &kp LC(UP)            &kp C_VOL_DN         &kp C_VOL_UP  &trans
+        &none &none        &none        &none        &none        &none                                      &tog 0 &none                                                       &none        &none        &none        &none &none &none
+        &none &none        &none        &none        &none                                       &none &none &tog 3 &none      &bl BL_TOG &rgb_ug RGB_TOG                                    &bl BL_INC   &bl BL_DEC   &none &none &none
       >;
     };
   };
