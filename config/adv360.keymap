@@ -60,7 +60,7 @@
     };
     android_layer {
       bindings = <
-        &kp EQUAL      &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                  &mo 3             &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp MINUS
+        &kp EQUAL      &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                  &trans            &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp MINUS
         &kp TAB        &kp Q     &kp W    &kp E    &kp R      &kp T  &kp LGUI                                                                &kp RC(LS(ENTER)) &kp Y  &kp U    &kp I     &kp O    &kp P    &kp BSLH
         &kp ESC        &kp A     &kp S    &kp D    &kp F      &kp G  &kp LS(LALT)           &kp LCTRL &kp LALT &kp RCTRL &kp LCTRL           &kp RC(ENTER)     &kp H  &kp J    &kp K     &kp L    &kp SEMI &kp SQT
         &kp LSHFT      &kp Z     &kp X    &kp C    &kp V      &kp B                                   &kp HOME &kp PG_UP                                       &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
@@ -69,7 +69,7 @@
     };
     android_fn {
       bindings = <
-        &kp F1              &kp F2            &kp F3            &kp F4           &kp F5            &kp F6            &tog 1                                                                                                  &mo 3                    &kp F7             &kp F8        &kp F9                &kp F10              &kp F11       &kp F12
+        &kp F1              &kp F2            &kp F3            &kp F4           &kp F5            &kp F6            &tog 1                                                                                                  &trans                   &kp F7             &kp F8        &kp F9                &kp F10              &kp F11       &kp F12
         &kp LA(TAB)         &kp RC(LS(RS(Q))) &kp LC(F2)        &kp LC(F4)       &kp LC(F5)        &kp LC(LS(RS(T))) &kp RC(F1)                                                                                              &kp RC(LS(RS(LC(UP))))   &kp LA(F7)         &kp LA(F8)    &kp RC(LS(RS(I)))     &kp LC(LS(RS(F9)))   &kp LC(LA(P)) &kp LA(F12)
         &kp RC(LS(RS(DEL))) &kp LC(F2)        &kp LC(F5)        &kp LC(F6)       &kp LC(LA(F))     &kp LA(T)         &kp RC(F2)                                   &trans &trans            &trans                &trans      &kp RC(LS(RS(LC(DOWN)))) &kp LA(F8)         &kp LC(F8)    &kp LC(LS(RS(COMMA))) &kp LC(LS(RS(F10)))  &kp C_MUTE    &trans
         &trans              &kp RC(LS(RS(Z))) &kp RC(LS(RS(X))) &kp LC(LA(C))    &kp LC(LA(V))     &kp RC(LS(RS(B)))                                                     &kp LC(LA(LEFT))  &kp RC(LS(RS(LEFT)))                                       &kp LC(LS(RS(N)))  &kp LC(LA(M)) &kp LA(F9)            &trans               &trans        &trans
